@@ -1,11 +1,7 @@
-def count_words(text: str) -> int:
-    """Accepts text and returns the total number of words."""
-    return len(text.split())
-
+from stats import count_words
 
 def get_book_text(filepath: str) -> str:
     """Reads a book file and returns the contents as a string."""
-
     with open(filepath, 'r') as file:
         contents = file.read()
     return contents
